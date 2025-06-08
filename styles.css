@@ -1,53 +1,83 @@
 html, body {
-      margin: 0;
-      padding: 0;
-      background-color: #E6E6FA;
-      font-family: sans-serif;
-    }
-#navbar{background-color:#A47DAB;
-     padding:20px; 
-      display: flex;
-   justify-content: flex-end; 
-   
+   margin: 0;
+  padding: 0;
+  background-color: #E6E6FA;
+  font-family: sans-serif;
 }
-#navbar a{color: black;
+
+#navbar {
+  background-color: #A47DAB;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 96%;
+ 
+}
+
+#navbar a {
+  color: black;
   text-decoration: underline;
-      margin-left: 30px;
-      font-size: 18px;
-font-weight:bold;}
-
-h1{text-align:center;
-padding-top:200px;}
-#base{
-  text-align:center;
-padding-bottom:200px;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-h2{
-  text-align:center;
-  text-decoration:underline;
+
+#welcome-section h1 {
+  text-align: center;
+  padding-top: 200px;
 }
 
-#work{background-color:#CCCCFF;
-padding-bottom:500px;}
+#welcome-section #base {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+
+#projects {
+  background-color: #CCCCFF;
+  padding-bottom: 100px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
 
 .social {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 40px;
-    }
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
 
-    .social a {
-      text-decoration: none;
-      color: black;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: color 0.3s ease;
-    }
+.social a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
 
-    .social a:hover {
-      color: #ffd700;
-    }
+.social a:hover {
+  color: #ffd700;
+}
+.project-tile {
+  color: #4B0082; 
+  text-decoration: none; 
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.project-tile:hover {
+  color: #800080; 
+  text-decoration: underline;
+}
+
+

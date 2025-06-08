@@ -1,9 +1,11 @@
 html, body {
-   margin: 0;
+    margin: 0;
   padding: 0;
   background-color: #E6E6FA;
   font-family: sans-serif;
+  box-sizing: border-box; 
 }
+
 
 #navbar {
   background-color: #A47DAB;
@@ -13,7 +15,8 @@ html, body {
   top: 0;
   left: 0;
   width: 96%;
- 
+  box-sizing: border-box;
+  z-index: 1000; 
 }
 
 #navbar a {
@@ -28,22 +31,24 @@ html, body {
 #welcome-section h1 {
   text-align: center;
   padding-top: 200px;
+  margin: 0;
 }
 
 #welcome-section #base {
   text-align: center;
   padding-bottom: 200px;
+  margin: 0;
 }
 
-
 #projects {
- background-color: #bfbfdb;
+  background-color: #bfbfdb;
   padding-bottom: 100px;
 }
 
 h2 {
   text-align: center;
   text-decoration: underline;
+  margin-top: 0;
 }
 
 
@@ -67,17 +72,55 @@ h2 {
 .social a:hover {
   color: #ffd700;
 }
+
 .project-tile {
-  color: #4B0082; 
-  text-decoration: none; 
+  color: #4B0082;
+  text-decoration: none;
   font-weight: bold;
   font-size: 18px;
   transition: color 0.3s ease;
 }
 
 .project-tile:hover {
-  color: #800080; 
+  color: #800080;
   text-decoration: underline;
 }
 
+
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #navbar a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  #welcome-section h1 {
+    padding-top: 100px;
+    font-size: 1.5rem;
+  }
+
+  #welcome-section #base {
+    padding-bottom: 100px;
+    font-size: 1rem;
+  }
+
+  #projects {
+    padding-bottom: 50px;
+  }
+
+  .project-tile {
+    font-size: 16px;
+  }
+
+  .social a {
+    font-size: 18px;
+    gap: 5px;
+  }
+}
 
